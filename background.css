@@ -15,9 +15,10 @@ div {
 section h1 {
     color:black ;
     text-align: center;
-    box-shadow:2px 2px 5px #ffe310 ;
+    box-shadow:2px 2px 5px #497477 ;
     background-color:#d6d6d6;
     border-radius: 1em;
+    font-family: 'Azeret Mono', monospace;
 }
 section:nth-of-type(1) div {
     background: center url('https://images.unsplash.com/photo-1630872134430-6837e967804c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80');
