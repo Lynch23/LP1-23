@@ -1,0 +1,31 @@
+body {
+    background-color:#001d3d ;
+}
+section {
+    display: inline-block;
+    margin: 15px;}
+div {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border:1px solid black;
+    margin-left: 15px;
+
+}
+section h1 {
+    color:black ;
+    text-align: center;
+    box-shadow:2px 2px 5px #ffe310 ;
+    background-color:#d6d6d6;
+    border-radius: 1em;
+}
+section:nth-of-type(1) div {
+    background: center url('https://images.unsplash.com/photo-1630872134430-6837e967804c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80');
+}
+section:nth-of-type(2) div {
+    background: url('https://images.unsplash.com/photo-1573106130310-b6a0c6559244?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80') center;
+}
+section:nth-of-type(3) div {
+    background: url('https://images.unsplash.com/photo-1577672612072-cf28c7f9782e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=282&q=80') right;
+}
+
