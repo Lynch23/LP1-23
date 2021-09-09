@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<style>
+    body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #003049;
+}
+h1 {
+    margin: 10px auto;
+    color: #d1d5de;
+    padding: 1em;
+    text-align: center;
+}
+#container {
+    background: #000814;
+    width: 60%;
+    margin: 10px auto;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+
+}
+
+button {
+    background:none;
+    color:#d1d5de;
+    padding: 1.5em;
+    border:2px solid;
+    font-size:1em;
+
+}
+button:nth-child(1) {
+    border-color: #f48c06;
+    transition: .25s;
+}
+button:nth-child(2) {
+    border-color:#008000 ;
+    transition: 0.25s;
+}
+button:nth-child(3) {
+    border-color: #09529a;
+    transition: .25s;
+}
+button:nth-child(4) {
+    border-color: #d00000;
+    transition: .25s;
+}
+button:nth-child(1):hover {
+    border-color:#ffba08;
+    color: orange;
+    box-shadow:0 0.5em 0.5em -0.4em orange;
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+button:nth-child(2):hover {
+    border-color: #049204;
+    color: #098009;
+    box-shadow: 0 0.5em 0.5em -0.4em #04e762;
+    transform: translateY(-5px);   
+     cursor: pointer;
+
+}
+button:nth-child(3):hover {
+    border-color: #09529a;
+    color:#1e6091;
+    box-shadow: 0 0.56em 0.5em -0.4em #1e6091;
+    transform: translateY(-5px);
+    cursor: pointer;
+
+}
+button:nth-child(4):hover {
+    border-color: #d01919;
+    color: #d01919;
+    box-shadow: 0 0.5em 0.5em -0.4em #d01919;
+    transform: translateY(-5px);
+    cursor: pointer;
+
+}
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Flexbox</title>
+</head>
+<body>
+    <h1>Hover Over These Buttons</h1>
+<div id="container">
+<button>Hover Me</button>
+<button>Hover Me</button>
+<button>Hover Me</button>
+<button>Hover Me</button>
+</div>
+</body>
+</html>
