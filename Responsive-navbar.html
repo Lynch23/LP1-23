@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive navbar</title>
+    <style>
+        body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #E5E5E5;
+}
+h1 {
+    font-weight: 100;
+    font-size: 4em;
+    text-align: center;
+}
+nav {
+    padding: 15px;
+    background-color: #fff;
+    display: flex;
+    font-size: 1.2em;
+    max-width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+li {
+    list-style: none;
+
+}
+button {
+    padding: 0.4em;
+    margin: 0.4em;
+    border-radius: 1em;
+    border: none;
+    background-color: #000000;
+    color: #E5E5E5;
+}
+section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 0.99em; 
+    padding: 15px 0;
+
+
+}
+
+#list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex: 1;
+    max-width: 50%;
+    justify-content: space-evenly;
+    flex-direction: row;
+
+}
+@media (max-width: 776px) {
+    h1 {
+        font-size: 3em;
+    }
+    nav, #list {
+        flex-direction: column;
+        align-items: center;
+        background: none;
+    }
+    section {
+        flex-direction: column;
+
+    }
+    div {
+        margin: 10px;
+    }
+}
+@media(max-width:556px) {
+    h1 {
+        font-size: 2em;
+    }
+    section {
+        flex-direction: column;
+    }
+    div {
+        margin: 10px;
+    }
+} 
+div {
+    max-width: 300px;
+    background-color: #fff;
+    border-radius: 1.5em;
+    padding: 10px;
+    line-height: 1.5em;
+    
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#home">Home</a>
+        <ul id="list">
+            <li><a href="#home">Pricing</a></li>
+            <li><a href="#home">Jobs</a></li>
+            <li><a href="#home">Contact</a></li>
+        </ul>
+        <a href="#home">Sign Up</a>
+    </nav>
+    <h1>
+        Responsive Navbar
+    </h1>
+    <hr>
+    <section>
+        <div>
+            <p>
+            Possimus repellat, qui id voluptates libero quod unde. Vel facere minus, molestias, perspiciatis ducimus magnam tempora et sint, nisi libero assumenda numquam eius autem. <button>Learn More</button></p>
+        </div>
+        <div>
+            <p>Repellat dolorem assumenda non velit minima suscipit eos cumque aspernatur commodi molestias excepturi quis laboriosam corrupti eligendi accusamus tenetur sequi! Soluta, quidem?</p>
+
+        </div>
+        <div>
+            <p>Ea optio aut dolorum quasi ratione sed, magni velit unde cupiditate ab. Quaerat similique nostrum laboriosam facere perspiciatis doloremque vitae, fugit inventore enim!</p>
+        </div>
+    </section>
+</body>
+</html>
