@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        #container {
+            display: grid;
+            margin: 24px auto;
+            max-width: 800px;
+            grid-template-columns: 2fr 2fr 2fr 4fr;
+            border: 1px solid gray;
+        }
+        #third {
+            grid-column: 1 / span 2;
+            grid-row: 1 / span 2;
+        }
+        #second {
+            grid-column: 2 / span 2;
+            grid-row: 2 / span 2;
+            z-index: 300;
+            
+        }
+        #first {
+            grid-column: 4;
+            grid-row: 3/span 2;
+            z-index: 34;
+
+        }
+    </style>
+    <title>Photography Portfolio</title>
+</head>
+<body>
+    <h1>
+        Lynch Austin
+    </h1>
+    <div id="container">
+        <img id="first" src="images/lines.jpg" alt=""><img id="second" src="images/resize.jpg" alt=""><img id="third" src="images/rues.jpg" alt="">
+    </div>
+</body>
+</html>
