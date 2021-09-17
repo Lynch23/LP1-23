@@ -2,28 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
             font-family: sans-serif;
+            background-color: #f8edeb;
+        }
+        div h1 {
+            color: #fec5bb;
+            background-color: gray;
+            text-align: center;
+            padding-top: 5px ;
+
+
+        }
+        h1 {
+            text-transform: uppercase;
+            font-family: 'Dancing Script', cursive;
+            font-size: 45px; 
+            grid-column: 2 / span 3;
+            grid-row: 3 / span 2; 
+            z-index: 3466;
+            box-sizing: content-box;
+            height: 1.6em;
+            border-bottom: 4px solid gray;
+            padding-bottom:3px;
         }
         #container {
             display: grid;
             margin: 24px auto;
             max-width: 800px;
             grid-template-columns: 2fr 2fr 2fr 4fr;
-            border: 1px solid gray;
+            background-color: #fae1dd;
         }
         #third {
             grid-column: 1 / span 2;
-            grid-row: 1 / span 2;
+            grid-row: 1 / span 1;
         }
         #second {
             grid-column: 2 / span 2;
             grid-row: 2 / span 2;
             z-index: 300;
-            
+
         }
         #first {
             grid-column: 4;
@@ -39,6 +63,7 @@
         Lynch Austin
     </h1>
     <div id="container">
+        <h1>M&G Images and Styles</h1>
         <img id="first" src="images/lines.jpg" alt=""><img id="second" src="images/resize.jpg" alt=""><img id="third" src="images/rues.jpg" alt="">
     </div>
 </body>
