@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div {
+            background-color: #21d3da;
+            font-size: 1.8em;
+            font-family: sans-serif;
+            text-align: center;
+        }
+        #container {
+            display: grid;
+            height: 100vh;
+            gap: 5px;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 0.2fr 1.3fr 1.3fr 0.8fr;
+            grid-template-areas:
+            'nav nav nav nav'
+            'side main main main'
+            'side cont1 cont2 cont3'
+            'side footer footer footer';
+
+        }
+        #one {
+            grid-area: nav;
+        }
+        #two {
+            grid-area: side;
+        }
+        #three {
+            grid-area: main;
+        }
+        #four {
+            grid-area: cont1;
+        }
+        #five {
+            grid-area: cont2;
+        }
+        #six {
+            grid-area: cont3;
+        }
+        #seven {
+            grid-area: footer;
+        }
+        @media(max-width: 976px) {
+            #container {
+            grid-template-columns: 1fr;
+            grid-template-rows: .5fr .8fr 4fr repeat(3, 2fr) 1.2fr;
+            gap: 5px;
+            grid-template-areas: 
+            'nav'
+            'side'
+            'main'
+            'cont1'
+            'cont2'
+            'cont3'
+            'footer';
+
+        }
+    }
+
+    </style>
+    <title>Responsive css grid</title>
+</head>
+<body>
+  <main id="container">
+      <div id="one">navbar</div>
+      <div id="two">sidebar</div>
+      <div id="three">main</div>
+      <div id="four">content 1</div>
+      <div id="five">content 2</div>
+      <div id="six">content 3</div>
+      <div id="seven">footer</div>
+  </main>  
+</body>
+</html>
