@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yaldevi:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <style>
+        body {
+            min-height: 100vh;
+            background-color: #1d3557;
+            font-family: 'Yaldevi', sans-serif;
+            padding: 2rem;
+        }
+        h1 {
+            color: #f1faee;
+            text-transform: uppercase;
+            font-weight: 500;
+            text-align: center;
+        }
+        h2 {
+            color: #f1faee;
+            font-weight: 500;
+            margin-bottom: 50px;
+        }
+        .intro {
+            color: #a8dadc;
+            text-align: center;
+            font-size: 2rem;
+            opacity: .4;
+        }.intro::before {
+            content: open-quote;
+            font-size: 2.2rem;
+            color: #a8dadc;
+        }.intro::after {
+            content: close-quote;
+            font-size: 2.2rem;
+            color: #a8dadc;
+        }
+        p {
+            font-size: 1.2rem;
+            color: #a8dadc;
+        }
+        a {
+            position: relative;
+        }
+        a::before {
+            content: 'A link opens in another window';
+            background-color: #457b9d;
+            line-height: .1em;
+            display: block;
+            color: blanchedalmond;
+            padding: 1.2rem;
+            position: absolute;
+            bottom: 100%;
+            white-space: nowrap;
+            border-radius: 15px;
+            opacity: 0;
+            bottom: 50%;
+            transition: ease-out 250ms;
+        }
+        a:hover::before  {
+            opacity: 1;
+            bottom: 90%;
+        }
+        .decorations {
+            padding: 4rem;
+            counter-reset: counter-name;
+        }
+        .section-header::before {
+            counter-increment: counter-name;
+            content: counter(counter-name) ' ';
+            position: absolute;
+            top: -.3em;
+            left: -2.5em;
+            background-color: #a8dadc;
+            width: 2em;
+            height: 2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            border: 3px solid rgb(54, 48, 48);
+            box-sizing: border-box;
+            color: rgb(54, 48, 48);;
+        }
+        .section-header {
+            position: relative;
+        }
+        a {
+            color: #a8dadc;
+            text-decoration: none;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>content property in action</title>
+</head>
+<body>
+    <h1>
+        Welcome to this page
+    </h1>
+    <p class="intro">There can never be another paragraph with the same class as this one.</p>
+   <div class="decorations">
+    <article>
+        <h2 class="section-header">Lorem</h2>
+        <p>Lorem <a href="#home">ipsum dolor</a> dolor sit amet consectetur adipisicing elit. Incidunt veniam architecto corrupti itaque nesciunt nam unde numquam ducimus reprehenderit ratione impedit repellendus libero, perspiciatis maxime eaque, fugit, temporibus sit? Minima?
+        Officiis ea exercitationem a nostrum adipisci vitae facere omnis, ab accusantium suscipit quis tenetur saepe dicta libero molestiae? Quos et hic sunt, magnam nihil tempora impedit asperiores iusto dicta earum!</p>
+    </article>
+    <article>
+        <h2 class="section-header">Lorem</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt veniam architecto corrupti itaque nesciunt nam unde numquam ducimus reprehenderit ratione impedit repellendus libero, perspiciatis maxime eaque, fugit, temporibus sit? Minima?
+        Officiis ea exercitationem a nostrum adipisci vitae facere omnis, ab accusantium suscipit quis tenetur saepe dicta libero molestiae? Quos et hic sunt, magnam nihil tempora impedit asperiores iusto dicta earum!</p>
+    </article>
+    <article>
+        <h2 class="section-header">Lorem</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt veniam architecto corrupti itaque nesciunt nam unde numquam ducimus reprehenderit ratione impedit repellendus libero, perspiciatis maxime eaque, fugit, temporibus sit? Minima?
+        Officiis ea exercitationem a nostrum adipisci vitae facere omnis, ab accusantium suscipit quis tenetur saepe dicta libero molestiae? Quos et hic sunt, magnam nihil tempora impedit asperiores iusto dicta earum!</p>
+    </article>
+    <article>
+        <h2 class="section-header">Lorem</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt veniam architecto corrupti itaque nesciunt nam unde numquam ducimus reprehenderit ratione impedit repellendus libero, perspiciatis maxime eaque, fugit, temporibus sit? Minima?
+        Officiis ea exercitationem a nostrum adipisci vitae facere omnis, ab accusantium suscipit quis tenetur saepe dicta libero molestiae? Quos et hic sunt, magnam nihil tempora impedit asperiores iusto dicta earum!</p>
+    </article>
+    </div> 
+
+    <div class="decorations">
+        <article>
+            <h2 class="section-header">Lorem</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis itaque sed ipsa? Illum quod est culpa cumque corrupti eum laboriosam, voluptatem incidunt totam dolorem! Voluptatem placeat eos quae aspernatur amet.
+            Dolore dolorem, ex officia esse recusandae deleniti sed. Vitae autem aliquam aliquid saepe cum ratione, accusantium minima. At cupiditate voluptate animi ipsum, mollitia doloremque, illum, dolore vero sit ea totam?
+            Et corrupti animi dolorum accusantium! Porro labore, explicabo ipsum neque expedita, ullam tenetur ducimus sequi fuga aut quisquam qui, et amet dolorum nesciunt id mollitia provident quo odit facilis eos!</p>
+        </article>
+        <article>
+            <h2 class="section-header">Lorem</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem inventore eius eos cupiditate veritatis quam neque asperiores! Eum numquam rerum tempora! Illum, officiis consequuntur! Distinctio corrupti porro ab quasi eum.
+                Ullam vitae id aliquam provident quae blanditiis perspiciatis. Facere corporis voluptatem expedita eius! Natus adipisci non, id maiores velit quae. Velit nesciunt cumque ducimus eveniet quidem beatae repellendus vero placeat!
+                Quidem modi non nemo, inventore nam, iste veniam maiores laboriosam quasi illo nesciunt ad? Quisquam esse ipsam in tempore qui architecto, alias dicta, aliquid nam vel harum corporis, maxime voluptatum!
+            </p>
+        </article>
+    </div>
+</body>
+</html>
