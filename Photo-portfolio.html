@@ -7,13 +7,172 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@802&display=swap" rel="stylesheet">    <link href="https://fonts.googleapis.com/css2?family=Glory&family=Prompt:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-size: 1rem;
+            text-align: center;
+            height: 200vh;
+            font-family: 'Unica One', sans-serif;
+            line-height: 1.4;
+            position: relative;
+            color: rgba(black, .7);
+        }
+        h1, h2, h3, h4, h5 {
+            font-family: 'Unica One';
+            text-transform: uppercase;
+            line-height: 1;
+
+        }
+        #container {
+            display: grid;
+            justify-items: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            grid-template-columns: repeat(3,300px);
+            gap: 20px;
+        }
+        .card {
+            position: relative; 
+            margin: 1em;
+            background: rgba(0, 0, 0, .7);  
+        }
+        .card::before, .card::after {
+            content: '';
+            position: absolute;
+            top: 1.2em;
+            bottom: 1.2em;
+            left: 1.2em;
+            right: 1.2em;
+        }
+        .card::after  {
+            border-right: 1px solid white;
+            border-left: 1px solid white;
+            transform: scale(1, 0);
+            transition: transform ease-in 250ms;
+        }
+        .card::before  {
+            border-top: 1px solid white;
+            border-bottom: 1px solid white;
+            transform: scale(0, 1);
+            transition: transform ease-in-out 250ms;
+        }
+        .card:hover::after {
+            transform: scale(1, 1.05);
+        }
+        .card:hover::before {
+            transform: scale(1.05, 1);
+        }
+
+
+
+        .card_img {
+            max-width: 100%;
+            display: block;
+            transition: opacity ease-out 250ms;
+            opacity: 1;
+        }
+        .card:hover .card_img {
+            opacity: .4;
+        }
+        .card_text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            opacity: 0;
+            transition: opacity ease-in-out 500ms;
+        }
+        .card:hover .card_text {
+            opacity: 1;
+        }
+
+        
+nav {
+    text-transform:uppercase;
+    border-bottom: 2px solid #f1f1f1;
+    width: 29%;
+    margin-left: calc(10%/6);
+    padding: 1.2em 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
+}
+
+    </style>
     <title>Photography Portfolio</title>
 </head>
 <body>
     <nav>
     Lynch Austin jr.
     </nav>
-<img src="C:\Users\DELL\images\boat.jpg" alt=""><img src="C:\Users\DELL\images\city-square.jpg" alt=""><img src="C:\Users\DELL\images\leaf.jpg" alt=""><img src="C:\Users\DELL\images\michele-caliani.jpg" alt=""><img src="C:\Users\DELL\images\sky.jpg" alt=""><img src="C:\Users\DELL\images\skyscrapper.jpg" alt=""><img src="C:\Users\DELL\images\linen.jpg" alt=""><img src="C:\Users\DELL\images\window.jpg" alt=""><img src="C:\Users\DELL\images\rue.jpg" alt=""> 
+
+    <div id="container">
+        <div class="card">
+            <img class="card_img" src="https://images.unsplash.com/photo-1615455057735-1d108a411194?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80" alt="">
+            <div class="card_text">
+                <h3>Title</h3>
+                <p>Time is Lorem</p>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card_img" src="https://images.unsplash.com/photo-1633110337787-8265ec022d21?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDN8X2hiLWRsNFEtNFV8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+            <div class="card_text">
+                <h3>Title</h3>
+                <p>Time is Lorem</p>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card_img" src="https://images.unsplash.com/photo-1633119277160-9e6b3204ca56?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80" alt="">
+            <div class="card_text">
+                <h3>Title</h3>
+                <p>Time is Lorem</p>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card_img" src="https://images.unsplash.com/photo-1627279001696-cacf1b249e9c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1171&q=80" alt="">
+            <div class="card_text">
+                <h3>Title</h3>
+                <p>Time is Lorem</p>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card_img" src="https://images.unsplash.com/photo-1622732777601-e744c3401d44?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1026&q=80" alt="">
+            <div class="card_text">
+                <h3>Title</h3>
+                <p>Time is Lorem</p>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card_img" src="https://images.unsplash.com/photo-1614518920881-532c6bc24802?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1074&q=80" alt="">
+            <div class="card_text">
+                <h3>Title</h3>
+                <p>Time is Lorem</p>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card_img" src="https://images.unsplash.com/photo-1617063477731-70a757d24619?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80" alt="">
+            <div class="card_text">
+                <h3>Title</h3>
+                <p>Time is Lorem</p>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card_img" src="https://images.unsplash.com/photo-1631342994537-34291c2ad1c6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80" alt="">
+            <div class="card_text">
+                <h3>Title</h3>
+                <p>Time is Lorem</p>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card_img" src="https://images.unsplash.com/photo-1618499576644-808d84c62d33?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=682&q=80" alt="">
+            <div class="card_text">
+                <h3>Title</h3>
+                <p>Time is Lorem</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
