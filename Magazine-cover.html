@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playball&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            position: relative;
+        }
+        .child {
+            color: white;
+        }
+        .cover {
+            background: url('https://images.unsplash.com/photo-1631695117568-c56a4e039ac4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=735&q=80');
+            background-repeat: no-repeat;
+            width: 45vw;
+            height: 110vh;
+            position: relative;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            grid-template-rows: auto .8fr .8fr 1fr 1fr;
+        }
+        .child {
+            color: rgba(255, 255, 255,.9);
+            text-transform: uppercase;
+            text-align: center;
+            font-family: 'Comfortaa', cursive;
+        }
+        .cover::before {
+            content: 'vogue';
+            color: white;
+            text-transform: uppercase;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 100%;
+            margin: 0;
+            transform: translate(-50%);
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            font-size: 11rem;
+            line-height: 11rem;}
+        .prada {
+            grid-row:3 ;
+            justify-self:center ;
+            align-self: center;
+        }
+        .prada_text {
+            font-family: 'Comfortaa', cursive;
+            margin-top: 0;
+        }
+        #prada_header {
+            font-family: none;
+            margin-bottom: .5rem;
+            line-height: 2.5rem;
+        }
+        .featured {
+            grid-row: 4;
+            align-self: start;
+        }
+        .footer {
+            grid-row: 5;
+            grid-column: 1/6;
+            font-size: 5rem;
+            line-height: 6rem;
+        }
+        .number {
+            grid-column: 4;
+            grid-row: 3/5;
+        }
+        .num {
+            font-size: 6rem;
+            font-weight: 300;
+        }
+        .quote {
+            grid-column: 4/6;
+            grid-row: 4;
+            font-size: 1.5rem;
+            align-self: center;
+            font-weight: 500;
+        }
+        #flw {
+            font-size: 1.5rem;
+            letter-spacing: -3.5px;
+        }
+        </style>
+    <title>VOGUE-magazine</title>
+</head>
+
+<body>
+    <div class="cover">
+        <div class="child prada">
+            <h1 id="prada_header">prada</h1>
+            <p class="prada_text"><small>MILANO<br><small>-established 1789-</small>
+            </small></p>
+        </div>
+        <div class="featured child"><h2 class="f-header">mike<br>willburn</h2><p class="f-text">feel, look<br>& smell <br> <span id="flw">flawless</span></p></div>
+        <div class="footer child">
+           <p class="model-name">alisha mendes</p>
+        </div>
+        <aside class="number child"><div class="num">43<sup>+</sup></div>looks to<br>stand out</aside>
+        <div class="quote child">now that<br>we are<br>left<br>alone...</div>
+    </div>
+</body>
+</html>
