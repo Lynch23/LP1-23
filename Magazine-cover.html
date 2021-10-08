@@ -20,7 +20,8 @@
          margin: 0;
          padding: .5rem;
          text-transform: uppercase;
-         font-family: 'Comfortaa', cursive;}
+         font-family: 'Comfortaa', cursive;
+       }
        .cover::before {
             content: 'rogue';
             color: white;
@@ -34,18 +35,22 @@
             font-family: 'Playfair Display', serif;
             font-weight: 600;
             font-size: 11rem;
-            line-height: 11rem;}
-            .cover::after {
-              content: 'alisha mendes';
-              position: absolute;
-              left: 50%;
-              bottom: 0;
-              transform: translate(-50%);
-              font-family: 'Lobster Two', cursive;;
-              font-size: 6.5rem;
-              width: max-content;
-              padding: 2%;
-              margin-bottom: 2%;}
+            line-height: 11rem;
+          }
+          .vs {
+            opacity: .5;
+          }
+        .cover::after {
+            content: 'alisha mendes';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translate(-50%);
+            font-family: 'Lobster Two', cursive;;
+            font-size: 6.5rem;
+            width: max-content;
+            padding: 2%;
+            margin-bottom: 2%;}
        body {
          margin: .5rem auto;
          background-color: #444;
@@ -61,42 +66,114 @@
          background-repeat: no-repeat;
          display: grid;
          grid-template-columns: repeat(3, 1fr) 2fr;
-         grid-template-rows: repeat(3, 1.5fr) 1fr;}
+         grid-template-rows: repeat(3, 1.5fr) 1fr;
+       }
        .child {
          align-self: center;
          justify-self: center;}
        .prada {
-            grid-row:2;}
+            grid-row:2;
+        }
         .prada_text {
             font-family: 'Comfortaa', cursive;
             text-align: center;
             margin-top: 0;}
         .featured {
-            grid-row: 3;}
+            grid-row: 3;
+        }
         .f-header {
-          font-size: 2rem;}
+          font-size: 2rem;
+        }
         #flw {
             font-size: 1.5rem;
             letter-spacing: -3.5px;
-            font-weight: 600;}
+            font-weight: 600;
+        }
         .number {
             grid-column: 4;
-            grid-row: 2;}
+            grid-row: 2;
+        }
         .num {
             font-size: 6rem;
-            font-weight: 300;}
+            font-weight: 300;
+        }
         .quote {
             grid-column: 4;
             grid-row: 3;
             font-size: 1.4rem;
-            font-weight: 500;}
+            font-weight: 500;
+        }
         #prada_header {
             font-family: none;
             margin-bottom: .1rem;
-            line-height: 2.5rem;}
+            line-height: 2.5rem;
+          }
           #issue {
             justify-self: start;
-            align-self: start;}
+            align-self: start;
+          }
+            @media screen and (max-width: 1440px) {
+              .cover::after {
+                font-size: 5rem;
+              }
+              .cover {
+                background-position: center;
+              }
+              .cover::before {
+                font-size: 9.5rem;
+              }
+            }
+            @media screen and (max-width:1350px)
+            {
+              .cover {
+                background-position: center;
+                height: 90vh;
+              }
+              .child {
+                align-self: start;
+              }
+              .num {
+                line-height: 2rem;
+                margin-bottom: 1rem;
+                letter-spacing: -2px;
+                font-size: 4rem;
+              }
+              .cover::after {
+                bottom: 5%;
+                opacity: .7;
+              }
+              .f-header {
+                font-size: 1.5rem;
+              }
+              .f-text {
+                font-size: .9rem;
+                line-height: 150%;
+              }
+              .quote {
+                font-size: 1.2rem;
+              }
+              .vs {
+                width: max-content;
+                opacity: .5;
+              }
+            }
+            @media screen and (max-width: 1100px) {
+              .cover::before {
+                font-size: 8rem;
+              }
+              .cover::after {
+                font-size: 4rem;
+              }
+              .cover {
+                background-position: center;
+              }
+            }
+            @media screen and (max-width: 800px) {
+              .cover {
+                height:20vh;
+              }
+              
+            }
         </style>
     <title>ROGUE-magazine</title>
 </head>
@@ -111,7 +188,7 @@
            <p style="color: #bbb; text-align: left;">issue no. 17</p>
         </div>
         <aside class="number child"><div class="num">43<sup>+</sup></div>looks to<br>stand out</aside>
-        <div class="quote child">now that<br>we are<br>left<br>alone... <div><small><cite> <small>-victoria's secret-</small></cite></small></div></div>
+        <div class="quote child">now that<br>we are<br>left<br>alone... <div class="vs"><small><cite> <small>-victoria's secret-</small></cite></small></div></div>
     </div> 
 </body>
 </html>
