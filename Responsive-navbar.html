@@ -13,6 +13,12 @@
     font-family: 'Roboto', sans-serif;
     background-color: #E5E5E5;
 }
+a {
+    text-decoration: none;
+}
+.header {
+    color: #333;
+}
 h1 {
     font-weight: 100;
     font-size: 4em;
@@ -45,8 +51,6 @@ section {
     justify-content: space-around;
     font-size: 0.99em; 
     padding: 15px 0;
-
-
 }
 
 #list {
@@ -57,8 +61,7 @@ section {
     max-width: 50%;
     justify-content: space-evenly;
     flex-direction: row;
-
-}
+ }
 @media (max-width: 776px) {
     h1 {
         font-size: 3em;
@@ -89,7 +92,7 @@ section {
 } 
 div {
     max-width: 300px;
-    background-color: #fff;
+    background-color: #ffe8d6;
     border-radius: 1.5em;
     padding: 10px;
     line-height: 1.5em;
@@ -98,7 +101,7 @@ div {
     </style>
 </head>
 <body>
-    <nav>
+    <nav style="background-color: #90e0ef;">
         <a href="#home">Home</a>
         <ul id="list">
             <li><a href="#home">Pricing</a></li>
@@ -107,7 +110,7 @@ div {
         </ul>
         <a href="#home">Sign Up</a>
     </nav>
-    <h1>
+    <h1 class="header">
         Responsive Navbar
     </h1>
     <hr>
